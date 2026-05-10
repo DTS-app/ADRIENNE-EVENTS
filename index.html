@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Adrienne Events — Nairobi's premier event planners, designers, florists & rental specialists. We turn your vision into breathtaking moments." />
+  <title>Adrienne Events | Event Planner &amp; Designer — Nairobi, Kenya</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/254719655146" target="_blank" rel="noopener" class="floating-wa" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="floating-wa-tooltip">Chat with us</span>
+  </a>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Event gallery" />
+      <video id="lightbox-video" controls playsinline></video>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Adrienne Events Home">
+        <span class="logo-main">ADRIENNE EVENTS</span>
+        <span class="logo-sub">Nairobi, Kenya</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta">
+          <a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener" class="btn btn-gold">
+            <i class="fas fa-calendar-check"></i> Book Now
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline preload="auto" id="hero-video">
+        <source id="hero-source" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        Nairobi's Finest Event Creators
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="hero-gold-line"></div>
+      <h1 class="hero-title">
+        We Create Moments
+        <span>That Last Forever</span>
+      </h1>
+      <p class="hero-subtitle">
+        Event Planning &nbsp;·&nbsp; Event Design &nbsp;·&nbsp; Event Rentals &nbsp;·&nbsp; Floral Design
+      </p>
+      <div class="hero-btns">
+        <a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener" class="btn btn-gold">
+          <i class="fas fa-calendar-check"></i> Book a Consultation
+        </a>
+        <a href="https://wa.me/254719655146" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-down" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item"><i class="fas fa-circle"></i> Event Planning</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Event Design</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Event Rentals</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Floral Design</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Baby Showers</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Corporate Events</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Birthday Parties</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Weddings</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Gender Reveals</span>
+      <span class="ticker-item"><i class="fas fa-circle"></i> Kids Parties</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <div class="about-photos" data-aos="fade-right">
+          <div class="about-photo-1">
+            <img src="photos/624091214_18521907883065831_7153691583926615697_n.jpg"
+              alt="Adrienne Events — vibrant birthday balloon setup" loading="lazy" />
+          </div>
+          <div class="about-photo-2">
+            <img src="photos/650140210_18343263538208354_2805397666251008049_n.jpg"
+              alt="Adrienne Events — fairy first birthday setup" loading="lazy" />
+          </div>
+          <div class="about-photo-badge">
+            <span class="num">5+</span>
+            <span class="label">Years of<br>Magic</span>
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Turning Your Vision Into <span>Breathtaking Reality</span></h2>
+          <p class="section-desc">
+            At Adrienne Events, we believe every celebration deserves to be extraordinary. From intimate gatherings to
+            grand corporate galas, our passionate team of planners, designers, and florists craft experiences that leave
+            lasting impressions.
+          </p>
+          <p class="section-desc" style="margin-top: 16px;">
+            Based in the heart of Nairobi, we bring creativity, elegance, and meticulous attention to detail to every
+            event we touch — because your special moments deserve nothing less.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Bespoke event design tailored to your vision</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Full-service coordination from concept to execution</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Premium rental inventory &amp; floral artistry</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Trusted by hundreds of happy clients across Nairobi</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/254719655146" target="_blank" rel="noopener" class="btn btn-gold">
+            <i class="fab fa-whatsapp"></i> Let's Plan Your Event
+          </a>
+          <div class="about-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Waiyaki Way, Nairobi, Kenya
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="services-head" data-aos="fade-up">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <p class="section-desc">
+          From florals to full-scale event production, we offer everything you need to make your celebration
+          unforgettable.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3 class="service-title">Event Planning</h3>
+          <p class="service-desc">
+            End-to-end event management — from timelines and vendor coordination to on-the-day execution. Stress-free,
+            seamless, stunning.
+          </p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="service-title">Event Design</h3>
+          <p class="service-desc">
+            Transforming spaces into visual masterpieces. Custom themes, balloon artistry, backdrops, lighting, and
+            décor that wow every guest.
+          </p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-icon"><i class="fas fa-couch"></i></div>
+          <h3 class="service-title">Event Rentals</h3>
+          <p class="service-desc">
+            Premium furniture, linens, tableware, arches, and props available to rent. Everything you need to style your
+            perfect event.
+          </p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3 class="service-title">Event Florist</h3>
+          <p class="service-desc">
+            Exquisite floral arrangements, centrepieces, bouquets, and installations crafted with the freshest blooms
+            for every occasion.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="gallery-head" data-aos="fade-up">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">Events We've <span>Created</span></h2>
+        <p class="section-desc">A glimpse into the world of Adrienne Events — where every detail tells a story.</p>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Photo 1 — large -->
+        <div class="gallery-item" data-type="image"
+          data-src="photos/624091214_18521907883065831_7153691583926615697_n.jpg" role="button" tabindex="0"
+          aria-label="View birthday balloon arch">
+          <img src="photos/624091214_18521907883065831_7153691583926615697_n.jpg"
+            alt="Vibrant birthday balloon arch setup" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item" data-type="image"
+          data-src="photos/650140210_18343263538208354_2805397666251008049_n.jpg" role="button" tabindex="0"
+          aria-label="View fairy birthday setup">
+          <img src="photos/650140210_18343263538208354_2805397666251008049_n.jpg" alt="Fairy first birthday setup"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item" data-type="image"
+          data-src="photos/652655407_18343467877208354_2830686757378238948_n.webp" role="button" tabindex="0"
+          aria-label="View Spider-Man birthday setup">
+          <img src="photos/652655407_18343467877208354_2830686757378238948_n.webp"
+            alt="Spider-Man themed birthday setup" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Video 1 — baby shower -->
+        <div class="gallery-item" data-type="video" id="gallery-video-1" role="button" tabindex="0"
+          aria-label="Play baby shower video">
+          <video muted loop playsinline preload="none" id="thumb-video-1">
+            <source id="thumb-src-1" type="video/mp4" />
+          </video>
+          <div class="gallery-video-badge"><i class="fas fa-play"></i> Video</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+
+        <!-- Video 2 — corporate -->
+        <div class="gallery-item" data-type="video" id="gallery-video-2" role="button" tabindex="0"
+          aria-label="Play corporate launch video">
+          <video muted loop playsinline preload="none" id="thumb-video-2">
+            <source id="thumb-src-2" type="video/mp4" />
+          </video>
+          <div class="gallery-video-badge"><i class="fas fa-play"></i> Video</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" aria-label="Our achievements">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-num" data-val="200" data-suffix="+">0+</div>
+          <div class="stat-label">Events Executed</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="80">
+          <div class="stat-num" data-val="500" data-suffix="+">0+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="160">
+          <div class="stat-num" data-val="5" data-suffix="+">0+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="240">
+          <div class="stat-num" data-val="100" data-suffix="%">0%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="testi-head" data-aos="fade-up">
+        <div class="section-label">Kind Words</div>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+        <p class="section-desc">Moments they'll never forget — words they were kind enough to share.</p>
+      </div>
+
+      <div class="testi-slider" data-aos="fade-up" data-aos-delay="100">
+        <div class="testi-track">
+          <div class="testi-cards">
+
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <p class="testi-text">
+                Adrienne Events turned my daughter's birthday into something out of a fairytale. Every single detail was
+                perfect — the balloon arch, the florals, everything. I didn't have to worry about a thing!
+              </p>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testi-author">
+                <strong>Amina Wanjiku</strong>
+                <span>Birthday Party — Nairobi</span>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <p class="testi-text">
+                We hired Adrienne Events for our corporate product launch and they absolutely delivered. The setup was
+                jaw-dropping, the coordination was flawless, and our guests were blown away. Highly recommend!
+              </p>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testi-author">
+                <strong>James Kariuki</strong>
+                <span>Corporate Launch Event</span>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <p class="testi-text">
+                From the first call to the last balloon, Adrienne Events made our baby shower so incredibly special. The
+                team is warm, professional, and genuinely passionate about what they do. We are forever grateful!
+              </p>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testi-author">
+                <strong>Fatuma Hassan</strong>
+                <span>Baby Shower — Westlands</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="testi-dots">
+          <div class="testi-dot active"></div>
+          <div class="testi-dot"></div>
+          <div class="testi-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" aria-label="Book your event">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-overlay"></div>
+    <div class="container">
+      <div data-aos="zoom-in">
+        <div class="section-label" style="justify-content:center;">Let's Get Started</div>
+        <h2 class="section-title">Ready to Create <span>Your Magic Moment?</span></h2>
+        <p class="section-desc">
+          Tell us about your dream event and let our team bring it to life. Every celebration begins with a single
+          conversation.
+        </p>
+        <div class="cta-btns">
+          <a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener" class="btn btn-gold">
+            <i class="fas fa-calendar-check"></i> Schedule a Free Consultation
+          </a>
+          <a href="https://wa.me/254719655146" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-info" data-aos="fade-right">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Plan <span>Together</span></h2>
+          <p class="section-desc">
+            Fill in the form and we'll get back to you on WhatsApp right away. Whether it's a grand wedding or an
+            intimate birthday — we're here for it.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-detail-text">
+                <strong>WhatsApp</strong>
+                <span>+254 719 655 146</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                <span>Waiyaki Way, Nairobi, Kenya</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-calendar-alt"></i></div>
+              <div class="contact-detail-text">
+                <strong>Book a Consultation</strong>
+                <span>
+                  <a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener"
+                    style="color:var(--gold);text-decoration:underline;">
+                    calendly.com/adrienneevents
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-detail-text">
+                <strong>Working Hours</strong>
+                <span>Mon – Sat, 8:00 AM – 7:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="form-title">Send Us a Message</h3>
+          <p class="form-subtitle">We'll respond via WhatsApp within minutes.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">Full Name *</label>
+                <input type="text" id="f-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="f-phone">Phone / WhatsApp *</label>
+                <input type="tel" id="f-phone" name="phone" placeholder="+254 7XX XXX XXX" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-event">Event Type *</label>
+                <select id="f-event" name="event" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option>Birthday Party</option>
+                  <option>Baby Shower</option>
+                  <option>Gender Reveal</option>
+                  <option>Wedding</option>
+                  <option>Corporate Event</option>
+                  <option>Kids Party</option>
+                  <option>Anniversary</option>
+                  <option>Graduation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-date">Event Date</label>
+                <input type="date" id="f-date" name="date" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-message">Tell Us More</label>
+              <textarea id="f-message" name="message"
+                placeholder="Describe your vision, theme, guest count, any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp form-submit">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+            <p class="form-note">
+              <i class="fab fa-whatsapp"></i>
+              Your message will open directly in WhatsApp
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">ADRIENNE EVENTS</div>
+          <div class="footer-tagline">Event Planners &amp; Designers</div>
+          <p>Crafting unforgettable celebrations across Nairobi and beyond. Your vision, our passion.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/254719655146" target="_blank" rel="noopener" class="footer-social"
+              aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/adrienneeventske" target="_blank" rel="noopener" class="footer-social"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/adrienneevents" target="_blank" rel="noopener" class="footer-social"
+              aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@adrienneevents" target="_blank" rel="noopener" class="footer-social"
+              aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Event Planning</a></li>
+            <li><a href="#services">Event Design</a></li>
+            <li><a href="#services">Event Rentals</a></li>
+            <li><a href="#services">Event Florist</a></li>
+            <li><a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener">Book a Consult</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Waiyaki Way, Nairobi, Kenya</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/254719655146" target="_blank" rel="noopener" style="color:inherit;">+254 719 655
+                146</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-calendar-alt"></i>
+              <a href="https://calendly.com/adrienneevents" target="_blank" rel="noopener"
+                style="color:var(--gold);">Book via Calendly</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 <span>Adrienne Events</span>. All rights reserved.
+        </p>
+        <p class="footer-love">
+          Made with <i class="fas fa-heart"></i> in Nairobi
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    /* Set video sources via JS to avoid filename encoding issues */
+    var babyShower = "videos/Celebrating love, life and the sweetest little blessing on the way. Balloons, bears 🐻 & baby lo.mp4";
+    var corporate = "videos/When its a corporate launch, we dont just plan it - we set the mood, raise the bar, and own th.mp4";
+
+    /* Hero video */
+    document.getElementById('hero-source').src = corporate;
+    document.getElementById('hero-video').load();
+
+    /* Gallery thumbnails */
+    document.getElementById('thumb-src-1').src = babyShower;
+    document.getElementById('thumb-video-1').load();
+    document.getElementById('thumb-video-1').play().catch(function () { });
+
+    document.getElementById('thumb-src-2').src = corporate;
+    document.getElementById('thumb-video-2').load();
+    document.getElementById('thumb-video-2').play().catch(function () { });
+
+    /* Gallery lightbox data-src */
+    document.getElementById('gallery-video-1').dataset.src = babyShower;
+    document.getElementById('gallery-video-2').dataset.src = corporate;
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
